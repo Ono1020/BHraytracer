@@ -1,0 +1,7 @@
+*.ppm
+*.d
+*.o
+*.png
+*.out
+*.txt
+.vscode/
