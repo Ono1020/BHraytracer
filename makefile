@@ -14,4 +14,10 @@ clean :
 run : $(PROGRAM)
 	./$(PROGRAM)
 
+.PHONY : test
+
+test :
+	g++ -Wall -O2 -Isrc -o test_geodesic.out tests/test_geodesic.cpp src/Ray.cpp src/Vec3.cpp
+	./test_geodesic.out
+
 -include *.d
